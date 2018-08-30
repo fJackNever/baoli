@@ -1,0 +1,421 @@
+﻿<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">   
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=yes,minimal-ui">
+<meta content="yes" name="apple-touch-fullscreen">    
+<meta content="black" name="apple-mobile-web-app-status-bar-style">    
+<meta content="telephone=no" name="format-detection">
+   
+   
+<title>产品手册电子版-前台首页</title>
+
+<!--<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/define.js"></script>
+<script type="text/javascript" src="js/public.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js" ></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/jqprint-0.3.js"></script>
+
+<link type="text/css" rel="stylesheet" href="css/swiper.min.css" /><link type="text/css" rel="stylesheet" href="css/style.css" />-->
+
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+document.writeln('<script type="text/javascript" src="js/define.js'+edition+'" charset="utf-8"></scr'+'ipt>');
+document.writeln('<script type="text/javascript" src="js/public.min.js'+edition+'" charset="utf-8"></scr'+'ipt>');
+document.writeln('<script type="text/javascript" src="js/swiper.min.js'+edition+'" charset="utf-8"></scr'+'ipt>');
+document.writeln('<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js'+edition+'" charset="utf-8"></scr'+'ipt>');
+document.writeln('<script type="text/javascript" src="js/jqprint-0.3.js'+edition+'" charset="utf-8"></scr'+'ipt>');
+document.writeln('<link type="text/css" rel="stylesheet" href="css/swiper.min.css'+edition+'" charset="utf-8" />');
+document.writeln('<link type="text/css" rel="stylesheet" href="css/style.css'+edition+'" charset="utf-8" />');
+</script>
+
+
+</head>
+<body>
+
+	<div class="loginfooter">杭州欧塬建筑设计有限公司&nbsp;&nbsp;&nbsp;技术支持</div>
+	
+<!-- <div class="fangsousouOut" id="fangsousouss" style="border-color:#888888; color:#888888; ">搜索楼盘</div> -->	
+<!-- <div class="fangsousouOut" id="fangsousouOut" style="border-color:#888888; color:#888888; top:120px; ">退出登录</div> -->	
+<div class="pro_img"></div>
+<div class="pro_name"></div>
+<div class="fangsousouOuta" >用户名</div>
+
+<div class="indexheight">
+	<div class="indexrotatein"></div>
+	
+	<div class="indexcondiv" >
+		<div class="indexcon" >
+			<!--<h2 class="indexztgk">总体概况</h2>
+			<h2 class="indexxk">之江一号房源销控表</h2>-->
+			<h5>
+				<!--<em class="list0 statusa"></em>
+				<em class="list1 statusb"></em>
+				<em class="list2 statusc"></em>
+				<em class="list3 statusa"></em>
+				<em class="list4 statusb"></em>
+				<em class="list5 statusc"></em>
+				<em class="list6 statusa"></em>
+				<em class="list7 statusb"></em>
+				<em class="list8 statusc"></em>
+				<em class="list9 statusa"></em>
+				<em class="list10 statusb"></em>
+				<em class="list11 statusc"></em>-->
+			</h5>
+			<h4>
+				<p><i class="statusa"></i>在售</p>
+				<p><i class="statusb"></i>已售</p>
+				<p><i class="statusc"></i>未开盘</p>
+			</h4>
+			<h3>
+				<a href="javascript:indexhas(0);" class="indexnavicoa hover" >首页</a>
+				<a href="javascript:surveyjava(1);" class="indexnavicob">总体概况</a>
+				<a href="javascript:controljava(2);" class="indexnavicoc">销控</a>
+				<a href="javascript:printjava(3);" class="indexnavicod" >打印</a>
+				<a href="park_car.html" class="indexnavicoe">车位</a>
+				<a href="javascript:businessjava(5);" class="indexnavicof">商业</a>
+			</h3>
+			<!-- <h6><img src="images/img20.png"/></h6> -->
+			<div class="search_lou_pro" id="fangsousouss" >
+				<img src="images/search_lou.png" alt="">
+				<div style="color:#888888;font-size: 12px;">搜索楼盘</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- 房房状态 -->
+<div class="indexsingle">
+	<div class="indexsinglediv">
+		<h6 class="prev"></h6>
+			<div class="indexsinglecon">
+				<div class="indexsingletop">
+					<b>幢</b>
+					<h4></h4>
+					<b>单元</b>
+					<h5><em><i class="statusa"></i>已售</em><em><i class="statusb"></i>未售</em></h5>
+				</div>
+				<div class="indexsinglelist rows">
+					<ul>
+						<!--<li class="statusa">
+							<b class="itema">12单元101室</b>
+							<p>*面积：120 m²</p>
+							<p>*房型：3室1厅2卫<</p>
+						</li>
+						<li class="statusa">
+							<b class="itemb">12单元101室</b>
+							<p>*面积：120 m²</p>
+							<p>*房型：3室1厅2卫<</p>
+						</li>
+						<li class="statusb">
+							<b class="itemc">12单元101室</b>
+							<p>*面积：120 m²</p>
+							<p>*房型：3室1厅2卫<</p>
+						</li>						<li class="statusa">
+							<b class="itema">12单元101室</b>
+							<p>*面积：120 m²</p>
+							<p>*房型：3室1厅2卫<</p>
+						</li>
+						<li class="statusa">
+							<b class="itemb">12单元101室</b>
+							<p>*面积：120 m²</p>
+							<p>*房型：3室1厅2卫<</p>
+						</li>
+						<li class="statusb">
+							<b class="itemc">12单元101室</b>
+							<p>*面积：120 m²</p>
+							<p>*房型：3室1厅2卫<</p>
+						</li>						<li class="statusa">
+							<b class="itema">12单元101室</b>
+							<p>*面积：120 m²</p>
+							<p>*房型：3室1厅2卫<</p>
+						</li>
+						<li class="statusa">
+							<b class="itemb">12单元101室</b>
+							<p>*面积：120 m²</p>
+							<p>*房型：3室1厅2卫<</p>
+						</li>
+						<li class="statusb">
+							<b class="itemc">12单元101室</b>
+							<p>*面积：120 m²</p>
+							<p>*房型：3室1厅2卫<</p>
+						</li>						<li class="statusa">
+							<b class="itema">12单元101室</b>
+							<p>*面积：120 m²</p>
+							<p>*房型：3室1厅2卫<</p>
+						</li>
+						<li class="statusa">
+							<b class="itemb">12单元101室</b>
+							<p>*面积：120 m²</p>
+							<p>*房型：3室1厅2卫<</p>
+						</li>
+						<li class="statusb">
+							<b class="itemc">12单元101室</b>
+							<p>*面积：120 m²</p>
+							<p>*房型：3室1厅2卫<</p>
+						</li>						<li class="statusa">
+							<b class="itema">12单元101室</b>
+							<p>*面积：120 m²</p>
+							<p>*房型：3室1厅2卫<</p>
+						</li>
+						<li class="statusa">
+							<b class="itemb">12单元101室</b>
+							<p>*面积：120 m²</p>
+							<p>*房型：3室1厅2卫<</p>
+						</li>
+						<li class="statusb">
+							<b class="itemc">12单元101室</b>
+							<p>*面积：120 m²</p>
+							<p>*房型：3室1厅2卫<</p>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+		<h6 class="next"></h6>
+	</div>
+</div>
+
+<!-- 总体概况 -->
+<div class="surveycon">
+	<div class="surveydiv">
+		<div class="surveynav">
+			<ul>
+				<!--<li class="hover"><i></i><b data-index="0">基础信息</b></li>
+				<li><i></i><b data-index="1">规划</b>
+					<p><em class="active" data-index="1">总平面图</em><em data-index="2">彩色示意图</em><em data-index="3">指标信息</em></p>
+				</li>
+				<li><i></i><b data-index="4">单体建筑</b><p><em class="active">总平面图</em><em>彩色示意图</em><em>指标信息</em><em>编号信息</em><em>产品分布</em><em>建筑间距</em><em>出入口关系</em><em>入户方式</em><em>功能用放分布</em><em>红外线不利固素</em><em>随意写的标题</em></p></li>
+				<li><i></i><b data-index="5">景观</b></li>
+				<li><i></i><b data-index="6">地下室</b></li>-->
+			</ul>
+		</div>
+		<div class="surveylist">
+			<ul>
+				<!--<li class="active">
+					<dl>
+						<dt>保利•铃兰公馆基础信息</dt>
+						<dd>物业类别：第三方</dd>
+						<dd>售楼地址：第三方</dd>
+						<dd>建筑类型：第三方</dd>
+						<dd>物业地址：第三方</dd>
+						<dd>环线位置：第三方</dd>
+						<dd>交通状况轨交：第三方</dd>
+						<dd>容积率：第三方</dd>
+						<dd>项目特色：第三方</dd>
+						<dd>开盘时间：第三方</dd>
+						<dd>装修状态：第三方</dd>
+						<dd>物业费：第三方</dd>
+						<dd>所属商圈：第三方</dd>
+						<dd>开发商：第三方</dd>
+						<dd>开绿化率：第三方</dd>
+						<dd>预售许可证：第三方</dd>
+						<dd>交房时间：第三方</dd>
+						<dd>物业公司：第三方</dd>
+					</dl>
+				</li>
+				<li></li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>13</li>-->
+				<!--<li>
+					<div class="indexgkdiv">
+						<div id="indexgkdivcon" class="indexgkdivcon">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="images/img36.jpg" /></div>
+							</div>
+						</div>	
+						<div class="paginationhd"></div>				
+					</div>
+				</li>-->
+			</ul>
+			<div class="indexgkdiv">
+				<div id="indexgkdivcon" class="indexgkdivcon">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><div class="swiper-zoom-container"><img src="images/img63.jpg" /></div></div>
+						<!--<div class="swiper-slide"><img src="images/img36.jpg" /></div>-->
+					</div>
+					<div class="paginationhd swiper-pagination-white"></div>	
+				</div>	
+							
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="prodImgpre">
+	<div class="prodImgprecon"><img src="images/img37.jpg"/></div>
+</div>
+
+<div class="indexImgsize">
+	<div class="indexImgsizediv">
+		<div id="indexImgsizecon" class="indexImgsizecon">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><div class="swiper-zoom-container"><img src="images/img36.jpg" /></div></div>
+			</div>
+		</div>	
+		<div class="paginationhd"></div>
+		<div class="indexImgsizehide">X</div>
+	</div>
+</div>
+
+
+
+<!-- 销控 -->
+<div class="controlcon">
+	<div class="controldiv">
+		<h6 class="prev"></h6>
+			<div class="controldivcon">
+				<div class="controldivtop">
+					<b>幢</b>
+					<p><em>套</em><i>0<img src="images/img50.jpg" /></i><em>可售：</em></p>
+					<p><em>套</em><i>0<img src="images/img50.jpg" /></i><em>已售：</em></p>
+					<p><em>套</em><i>0<img src="images/img50.jpg" /></i><em>销售房源：</em></p>
+				</div>
+				<div class="controldivlist">
+					<h5><b>房号&nbsp;&nbsp;&nbsp;备案价(元)/<em>销售价(元)</em></b><b>房号&nbsp;&nbsp;&nbsp;备案价(元)/<em>销售价(元)</em></b><b>房号&nbsp;&nbsp;&nbsp;备案价(元)/<em>销售价(元)</em></b><b>房号&nbsp;&nbsp;&nbsp;备案价(元)/<em>销售价(元)</em></b></h5>
+					<div class="rows"><ul>
+						<!--<li class="active">6-1-202&nbsp;&nbsp;&nbsp;¥3857334.6</li>
+						<li>6-1-202&nbsp;&nbsp;&nbsp;¥3857334.6</li>
+						<li class="active">6-1-202&nbsp;&nbsp;&nbsp;¥3857334.6</li>
+						<li class="active">6-1-202&nbsp;&nbsp;&nbsp;¥3857334.6</li>
+						<li>6-1-202&nbsp;&nbsp;&nbsp;¥3857334.6</li>
+						<li>6-1-202&nbsp;&nbsp;&nbsp;¥3857334.6</li>
+						<li class="active">6-1-202&nbsp;&nbsp;&nbsp;¥3857334.6</li>
+						<li>6-1-202&nbsp;&nbsp;&nbsp;¥3857334.6</li>
+						<li class="active">6-1-202&nbsp;&nbsp;&nbsp;¥3857334.6</li>
+						<li>6-1-202&nbsp;&nbsp;&nbsp;¥3857334.6</li>
+						<li>6-1-202&nbsp;&nbsp;&nbsp;¥3857334.6</li>
+						<li>6-1-202&nbsp;&nbsp;&nbsp;¥3857334.6</li>
+						<li class="active">6-1-202&nbsp;&nbsp;&nbsp;¥3857334.6</li>
+						<li>6-1-202&nbsp;&nbsp;&nbsp;¥3857334.6</li>
+						<li>6-1-202&nbsp;&nbsp;&nbsp;¥3857334.6</li>
+						<li>6-1-202&nbsp;&nbsp;&nbsp;¥3857334.6</li>
+						<li>6-1-202&nbsp;&nbsp;&nbsp;¥3857334.6</li>-->
+					</ul></div>
+				</div>
+				<div class="controldivpage">
+					<p><em><!--<i class="hover">1</i><i>2</i><i>3</i>--></em></p>
+					<b>已售</b>
+				</div>
+			</div>
+		<h6 class="next"></h6>
+	</div>
+</div>
+
+<!-- 当前用户签约情况 -->
+<div class="userSignCon">
+	<div class="userSignDiv">
+		<div class="userSigntop">
+			<b>用户名</b>
+			<p><em>套</em><span><i>0</i></span><em>签约总数统计：</em></p>
+		</div>
+		<div class="userSignDivcon rows">
+			<ul>
+				<!-- <li><div>
+					<p><b>签约户号:</b><em>19幢12单元101室</em></p>
+					<p><b>签约价格:</b><em>627万</em></p>
+					<p><b>签约时间:</b><em>2017年1月1日</em></p>
+					<p><b>手机号码:</b><em>15618712393</em></p>
+				</div></li> -->
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- 打印 -->
+<div id="printWeb">
+	<div id="printWebdiv">
+	</div>
+</div>
+<div class="indexprintcon">
+	<div class="indexprintdiv">
+		<div class="indexprintdiva">
+			<input name="" type="text" placeholder="请输入手机号" />
+			<button>提交</button>
+		</div>
+		<div class="indexprintdivb">
+			<p><b>111111</b><em>打印</em></p>
+			<p><b>111111</b><em>打印</em></p>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- 商业 -->
+<div class="businesscon">
+	<div class="businessdiv">
+		<div class="businessnav">
+			<ul>
+				
+			</ul>
+		</div>
+		<div class="businesslist">
+			<!-- <ul>
+				
+			</ul> -->
+			<div class="indexsydiv">
+				<div id="indexsydivcon" class="indexsydivcon">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="swiper-zoom-container"><img src="images/img63.jpg" /></div>
+						</div>
+						
+					</div>
+					<div class="paginationhd swiper-pagination-white"></div>	
+				</div>	
+							
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="prodImgpre2">
+	<div class="prodImgprecon2"><img src="images/img37.jpg"/></div>
+</div>
+
+<div class="indexImgsize2">
+	<div class="indexImgsizediv2">
+		<div id="indexImgsizecon2" class="indexImgsizecon2">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><div class="swiper-zoom-container"><img src="images/img36.jpg" /></div></div>
+			</div>
+		</div>	
+		<div class="paginationhd"></div>
+		<div class="indexImgsizehide2">X</div>
+	</div>
+</div>
+
+
+<!-- 二维码  -->
+<div class="qrcodecon">
+	<div class="qrcodediv">
+		<p><img src="images/img47.jpg" /></p>
+		<!--<b>11号家书</b>-->
+		<b><img src="images/img64.png" /></b>
+		<h6><!--<em>致辞栏：</em>--><i>请扫描二维码关注微信公众号获取签约文件，谢谢！</i></h6>
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+document.writeln('<script type="text/javascript" src="js/index.js'+edition+'" charset="utf-8"></scr'+'ipt>');
+</script>
+
+
+</body>
+</html>
